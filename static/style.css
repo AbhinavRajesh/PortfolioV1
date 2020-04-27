@@ -1,0 +1,491 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  overflow-x: hidden;
+  background-color: rgb(36, 35, 68);
+}
+/* Index page */
+
+.landing {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: rgb(36, 35, 68);
+  padding: 100px;
+}
+
+.landing p {
+  text-align: center;
+  width: 30%;
+  font-size: 18px;
+  color: white;
+  padding: 50px;
+}
+
+.landing a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  padding: 10px 30px;
+  border: 1px solid white;
+  font-weight: 600;
+}
+
+.landing a:hover {
+  color: rgb(39, 35, 35);
+  background-color: white;
+}
+
+/* Intro */
+
+.Intro-Text {
+  padding-left: 70px;
+  font-size: 14px;
+  font-weight: 700;
+  color: rgb(36, 35, 68);
+  margin-bottom: 10px;
+  position: absolute;
+  opacity: 0;
+  z-index: 100;
+  transition: all;
+}
+.Intro-Text1 {
+  padding-top: 100px;
+}
+.Intro-Text2 {
+  padding-top: 130px;
+}
+.Intro-Text3 {
+  padding-top: 160px;
+}
+.IntroSlide {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #f0f0f0;
+  top: 0;
+  bottom: 0;
+  z-index: 10;
+  transition: all;
+}
+.IntroSlideLeft {
+  left: 0;
+}
+.IntroSlideRight {
+  right: 0;
+}
+
+/* Home Page */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 5;
+}
+
+.container {
+  color: white;
+  background-color: rgb(36, 35, 68);
+}
+
+.wrapper {
+  opacity: 0;
+}
+
+.hamburger {
+  position: absolute;
+  cursor: pointer;
+  z-index: 2;
+  right: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+}
+
+.line {
+  width: 40px;
+  height: 2px;
+  margin: 5px;
+  background-color: white;
+}
+
+.nav-bar {
+  display: flex;
+  /* background-color: #1414149c; */
+  height: 10vh;
+  padding-left: 50px;
+  padding-right: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo h1 {
+  color: white;
+  font-weight: 400;
+}
+
+.logo img {
+  height: 36px;
+}
+
+.nav-dropdown {
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(46, 44, 83);
+  clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(100px at 90% -20%);
+  transition: all 1s ease-out;
+  pointer-events: none;
+}
+
+.nav-dropdown.open {
+  clip-path: circle(2000px at 90% -20%);
+  -webkit-clip-path: circle(2000px at 90% -20%);
+  pointer-events: all;
+}
+
+.nav-links {
+  flex-direction: column;
+  display: flex;
+  flex-grow: 3;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid white;
+}
+
+.nav-links a {
+  padding: 30px;
+  color: white;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.nav-my-details {
+  flex-grow: 1;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  padding: 100px;
+}
+
+.nav-my-details h2 {
+  font-weight: 400;
+  font-size: 26px;
+}
+.nav-my-details h3 {
+  font-weight: 200;
+}
+
+.nav-contact a i {
+  margin: 10px;
+  padding: 10px;
+  color: white;
+}
+
+.nav-contact a i:hover {
+  border-radius: 50%;
+  background-color: rgba(190, 187, 243, 0.322);
+}
+
+.nav-links a {
+  text-decoration: none;
+}
+
+.content {
+  display: none;
+  padding: 100px;
+}
+
+.intro-wrapper {
+  padding-bottom: 100px;
+  margin-bottom: 50px;
+}
+
+.intro-wrapper span {
+  color: orangered;
+}
+
+.intro-wrapper h1 {
+  font-size: 48px;
+}
+
+.intro-wrapper p {
+  font-weight: 200;
+}
+
+.small-intro {
+  font-size: 18px;
+  font-weight: 200;
+  width: 40%;
+  margin-left: auto;
+  margin-bottom: 150px;
+}
+
+.projects-section h1 {
+  font-size: 36px;
+  color: orangered;
+}
+
+.project-section {
+  display: flex;
+  flex-direction: column;
+  background-color: #4d4c7d;
+  border-radius: 2px;
+  padding: 50px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  margin: 50px 0;
+}
+
+.project-name h2 {
+  font-size: 30px;
+  color: orangered;
+  text-align: left;
+}
+.projects-section a {
+  text-decoration: none;
+}
+
+.project-description {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.img-part {
+  flex-grow: 1;
+}
+
+.img-part img {
+  height: 300px;
+  padding: 10px;
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
+  background-color: #7f7dc4;
+}
+
+.description-part {
+  flex-grow: 1;
+}
+
+.description-part p {
+  color: white;
+  text-align: left;
+}
+
+/* Projects Page */
+
+.projects-container {
+  display: none;
+  background-color: rgb(36, 35, 68);
+}
+.project-cover {
+  position: relative;
+  text-shadow: 2px 2px 10px rgb(36, 35, 68);
+}
+/* Project Cover BG */
+#lasl {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+
+  background-image: url(../assets/images/StoreLocatorbg.png);
+  background-position: center;
+  background-size: cover;
+}
+/* End of Project Cover BG */
+.project-bg {
+  height: 90vh;
+  width: 100%;
+}
+.project-cover-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+}
+.project-cover-text h1 {
+  font-size: 60px;
+  font-weight: 600;
+  color: white;
+}
+.project-links {
+  display: flex;
+}
+.project-links a {
+  text-decoration: none;
+  padding: 0 10px;
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+}
+.project-links a:hover {
+  color: rgb(172, 169, 255);
+}
+.project-short-desc p {
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.project-year p {
+  color: white;
+  font-size: 14px;
+  padding: 5px 10px;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+.scroll-text {
+  position: absolute;
+  color: white;
+  top: 90%;
+  left: 48%;
+}
+.project-content-container,
+.project-mobile-container {
+  padding: 100px 200px;
+  background-color: rgb(245, 245, 245);
+  color: rgb(36, 35, 68);
+}
+.project-content-container h1,
+.project-tech-container h1 {
+  font-size: 48px;
+  font-weight: 600;
+  width: 40%;
+}
+.project-content-container p,
+.project-tech-container p,
+.project-mobile-container p {
+  width: 40%;
+  padding: 50px 0;
+  margin-left: auto;
+}
+.project-tech-container {
+  display: flex;
+  flex-direction: column;
+  padding: 100px 200px;
+  background-color: rgb(245, 245, 245);
+  color: rgb(36, 35, 68);
+}
+.project-tech-container ul {
+  display: flex;
+  width: 50%;
+  padding: 50px 0;
+  margin: auto;
+}
+.project-tech-container ul li {
+  list-style: none;
+  font-weight: 600;
+  padding: 10px 30px;
+}
+.project-img-2 {
+  background-color: #dcdfd8;
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.project-mobile-container h1 {
+  display: flex;
+  justify-content: center;
+}
+#lasl-img-2 {
+  background-image: url(../assets/images/StoreLocator-2.png);
+}
+.project-img-3-4 {
+  height: 80vh;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 0 150px;
+}
+.project-img-3-4 img {
+  display: block;
+  margin: auto;
+}
+#img-3 {
+  height: 352px;
+  width: 181px;
+}
+#img-4 {
+  height: 500px;
+  width: 350px;
+}
+
+.cpy-ryt {
+  height: 8vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cpy-ryt p {
+  color: white;
+}
+.cpy-ryt p i {
+  color: rgb(255, 31, 31);
+}
+.next-project {
+  padding: 100px 200px;
+}
+.next-project h3 {
+  font-size: 36px;
+  font-weight: 600;
+}
+.next-project a {
+  text-decoration: none;
+  color: white;
+  font-size: 48px;
+  font-weight: 300;
+}
+/* Contact Page */
+.contact-wrapper {
+  display: none;
+  background-color: rgb(36, 35, 68);
+  padding: 100px 200px;
+}
+.contact-wrapper h1 {
+  font-size: 64px;
+  font-weight: 600;
+}
+.contact-wrapper h2 {
+  font-size: 48px;
+  font-weight: 300;
+  margin-top: -35px;
+}
+.contact-wrapper h3 {
+  font-size: 36px;
+  padding: 50px 0;
+}
+
+@media screen and (max-width: 400px) {
+  .landing p {
+    width: 300px;
+  }
+  html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
+@media screen and (max-height: 700px) {
+  .landing a {
+    bottom: 90px;
+  }
+  .landing p {
+    bottom: 180px;
+  }
+  html {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+}
