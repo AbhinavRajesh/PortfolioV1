@@ -1,0 +1,51 @@
+/* Index */
+.landing p {
+  width: 50%;
+}
+/* Home */
+.img-part img {
+  height: 200px;
+}
+.small-intro {
+  margin-bottom: 70px;
+  width: 60%;
+}
+.intro-wrapper {
+  padding-bottom: 20px;
+}
+.nav-my-details {
+  flex-grow: 1;
+  padding: 70px;
+}
+.description-part {
+  padding: 40px;
+}
+.project-name h2 {
+  margin: 0 0 30px 0;
+}
+
+@media (max-width: 800px) {
+  .project-description {
+    flex-direction: column;
+  }
+}
+/* Home Responsive for Tablets: DONE */
+
+/* Hamburger */
+.nav-links {
+  flex-grow: 4;
+}
+/* Hamburger Responsive for Tablets: DONE */
+
+/* About */
+.about-text-content {
+  width: 100%;
+}
+.about-texts-wrapper {
+  padding-bottom: 0;
+}
+@media (max-width: 768px) {
+  .about-texts-wrapper {
+    padding: 50px 0;
+  }
+}

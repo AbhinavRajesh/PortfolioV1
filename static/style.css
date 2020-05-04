@@ -43,6 +43,7 @@ body {
 .landing a:hover {
   color: rgb(39, 35, 35);
   background-color: white;
+  font-weight: bold;
 }
 
 /* Intro */
@@ -526,26 +527,4 @@ header {
 .work-env p {
   margin-bottom: -10px;
   color: #f0f0f0b6;
-}
-
-@media screen and (max-width: 400px) {
-  .landing p {
-    width: 300px;
-  }
-  html {
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
-}
-@media screen and (max-height: 700px) {
-  .landing a {
-    bottom: 90px;
-  }
-  .landing p {
-    bottom: 180px;
-  }
-  html {
-    overflow-y: hidden;
-    overflow-x: hidden;
-  }
 }

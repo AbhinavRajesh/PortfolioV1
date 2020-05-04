@@ -1,0 +1,107 @@
+/* Nav Bar */
+.nav-bar {
+  padding: 0 20px;
+}
+/* Nav Bar Responsive for Mobile: DONE */
+/* Index */
+.Intro-Text {
+  padding-left: 40px;
+}
+.landing {
+  padding: 30px;
+  width: 100%;
+}
+.landing p {
+  width: 100%;
+}
+/* Index Responsive for Mobile: DONE */
+/* Home */
+header {
+  background-color: rgb(36, 35, 68);
+}
+.content {
+  padding: 50px;
+}
+.intro-wrapper h1 {
+  font-size: 36px;
+}
+.small-intro {
+  display: block;
+  margin: 0 auto 70px auto;
+  width: 100%;
+}
+.project-description {
+  flex-direction: column;
+}
+.img-part img {
+  height: 150px;
+  padding: 5px;
+}
+.description-part {
+  padding: 30px 0 0 0;
+}
+.project-section {
+  padding: 30px;
+}
+.project-name h2 {
+  font-size: 22px;
+}
+.project-name p {
+  font-size: 16px;
+}
+
+@media (max-width: 360px) {
+  .img-part img {
+    height: 130px;
+  }
+}
+/* Home Responsive for Mobiles: DONE */
+
+/* Hamburger */
+
+.nav-dropdown {
+  flex-direction: column;
+}
+.nav-links {
+  border: none;
+  border-bottom: 1px solid white;
+  margin: 0 30px;
+}
+.nav-my-details {
+  justify-content: center;
+  align-items: center;
+}
+.nav-contact {
+  display: flex;
+}
+/* Hamburger Responsive for Mobiles: DONE */
+
+/* About */
+.about-wrapper h1 {
+  font-size: 36px;
+}
+.about-texts-wrapper {
+  padding: 30px 10px;
+}
+.about-text-title h2 {
+  font-size: 28px;
+}
+.about-text-content {
+  width: 100%;
+  font-size: 16px;
+}
+.skill {
+  width: 90%;
+  text-align: center;
+}
+.skill h4 {
+  font-size: 14px;
+}
+.skill h4 strong {
+  font-size: 18px;
+}
+.about-text-content h3 {
+  margin: 20px 0;
+  text-align: center;
+  border-bottom: 1px solid white;
+}

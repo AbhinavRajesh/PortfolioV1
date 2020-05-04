@@ -15,6 +15,8 @@ gsap.fromTo(
   { opacity: 1, duration: 1, stagger: 1 },
   { opacity: 0, duration: 1, stagger: 1, delay: 3 }
 );
+gsap.to("#Intro-Slide-Right-Home", 2, { display: "none", delay: 1 });
+gsap.to("#Intro-Slide-Left-Home", 2, { display: "none", delay: 1 });
 
 // Home Page
 
