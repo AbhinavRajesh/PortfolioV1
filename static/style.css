@@ -255,6 +255,7 @@ header {
   font-size: 30px;
   color: orangered;
   text-align: left;
+  text-shadow: 2px 2px 10px rgb(36, 35, 68);
 }
 .projects-section a {
   text-decoration: none;
@@ -273,7 +274,7 @@ header {
   height: 300px;
   padding: 10px;
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.2);
-  background-color: #7f7dc4;
+  background-color: rgb(253, 96, 39);
 }
 
 .description-part {
@@ -349,8 +350,10 @@ header {
 .scroll-text {
   position: absolute;
   color: white;
-  top: 90%;
+  top: 95%;
   left: 48%;
+  font-weight: 500;
+  text-shadow: 2px 2px 10px rgb(36, 35, 68);
 }
 .project-content-container,
 .project-mobile-container {
@@ -462,10 +465,67 @@ header {
   font-size: 48px;
   font-weight: 300;
   margin-top: -35px;
+  color: orangered;
 }
 .contact-wrapper h3 {
   font-size: 36px;
   padding: 50px 0;
+  color: orangered;
+}
+
+/*  About */
+.about-wrapper h1 {
+  font-size: 48px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.about-wrapper h1 span {
+  color: orangered;
+}
+.about-texts-wrapper {
+  padding: 70px;
+}
+.about-text-content {
+  width: 40%;
+}
+.about-text-title h2 {
+  color: orangered;
+  padding: 0 0 20px 0;
+  font-size: 30px;
+}
+.about-text-content p {
+  padding: 10px;
+}
+.about-text-content {
+  padding: 0 0 30px 10px;
+}
+.skill {
+  color: #f0f0f0b6;
+  width: 60%;
+  padding: 20px 0;
+}
+.skill p {
+  font-size: 18px;
+  line-height: 30px;
+}
+.about-text-content h3 {
+  text-transform: uppercase;
+}
+.skill h4 {
+  color: white;
+  font-weight: 500;
+  margin: 20px 0;
+}
+.skill h4 strong {
+  color: orangered;
+}
+.work-env {
+  width: 100%;
+  font-size: 16px;
+}
+.work-env p {
+  margin-bottom: -10px;
+  color: #f0f0f0b6;
 }
 
 @media screen and (max-width: 400px) {
