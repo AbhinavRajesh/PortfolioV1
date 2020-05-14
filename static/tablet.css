@@ -31,12 +31,6 @@
 }
 /* Home Responsive for Tablets: DONE */
 
-/* Hamburger */
-.nav-links {
-  flex-grow: 4;
-}
-/* Hamburger Responsive for Tablets: DONE */
-
 /* About */
 .about-text-content {
   width: 100%;
@@ -48,4 +42,39 @@
   .about-texts-wrapper {
     padding: 50px 0;
   }
+}
+
+/* Project */
+.project-content-container,
+.project-tech-container,
+.project-mobile-container,
+.next-project {
+  padding: 50px 100px;
+}
+.project-content-container h1,
+.project-tech-container h1,
+.project-mobile-container h1 {
+  width: 100%;
+  font-size: 30px;
+}
+.project-content-container p,
+.project-tech-container p,
+.project-mobile-container p {
+  width: 60%;
+}
+.project-img-3-4 {
+  padding: 0 50px;
+}
+.next-project h3 {
+  font-size: 24px;
+}
+.next-project a {
+  font-size: 30px;
+}
+.next-project p {
+  font-size: 14px;
+}
+/* Project Responsive for Tablet: DONE*/
+.contact-wrapper {
+  padding: 50px 100px;
 }

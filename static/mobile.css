@@ -105,3 +105,60 @@ header {
   text-align: center;
   border-bottom: 1px solid white;
 }
+/* About Responsive for Mobile: DONE */
+/* Projects */
+.project-content-container,
+.project-tech-container,
+.project-mobile-container,
+.next-project {
+  padding: 25px 50px;
+}
+.project-content-container h1,
+.project-tech-container h1,
+.project-mobile-container h1 {
+  width: 100%;
+  font-size: 24px;
+}
+.project-content-container p,
+.project-tech-container p,
+.project-mobile-container p {
+  width: 100%;
+  font-size: 14px;
+}
+.project-tech-container ul {
+  display: flex;
+  flex-direction: column;
+}
+.project-img-3-4 {
+  padding: 0 30px;
+}
+#img-3 {
+  height: 176px;
+  width: 91px;
+}
+#img-4 {
+  height: 250px;
+  width: 175px;
+}
+.project-cover-text {
+  top: 30%;
+}
+.scroll-text {
+  left: 42%;
+}
+/* Project Responsive for Mobile: DONE */
+/* Contact */
+.contact-wrapper {
+  padding: 20px 40px;
+}
+.contact-wrapper h1,
+.contact-wrapper h2 {
+  font-size: 36px;
+  padding: 10px 0;
+}
+.contact-wrapper h3 {
+  font-size: 28px;
+}
+.contact-wrapper p {
+  font-size: 14px;
+}

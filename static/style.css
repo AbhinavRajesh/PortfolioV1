@@ -301,8 +301,14 @@ header {
 #lasl {
   filter: brightness(50%);
   -webkit-filter: brightness(50%);
-
-  background-image: url(../assets/images/StoreLocatorbg.png);
+  background-image: url(../assets/images/storelocator/StoreLocatorbg.png);
+  background-position: center;
+  background-size: cover;
+}
+#covidt {
+  filter: brightness(50%);
+  -webkit-filter: brightness(50%);
+  background-image: url(../assets/images/covid19tracker/covid19trackerbg.png);
   background-position: center;
   background-size: cover;
 }
@@ -355,6 +361,7 @@ header {
   left: 48%;
   font-weight: 500;
   text-shadow: 2px 2px 10px rgb(36, 35, 68);
+  animation: bounce 0.9s ease-in-out infinite;
 }
 .project-content-container,
 .project-mobile-container {
@@ -384,9 +391,9 @@ header {
 }
 .project-tech-container ul {
   display: flex;
-  width: 50%;
   padding: 50px 0;
   margin: auto;
+  text-align: center;
 }
 .project-tech-container ul li {
   list-style: none;
@@ -394,7 +401,7 @@ header {
   padding: 10px 30px;
 }
 .project-img-2 {
-  background-color: #dcdfd8;
+  background-color: rgb(36, 35, 68);
   height: 100vh;
   width: 100%;
   background-position: center;
@@ -406,7 +413,10 @@ header {
   justify-content: center;
 }
 #lasl-img-2 {
-  background-image: url(../assets/images/StoreLocator-2.png);
+  background-image: url(../assets/images/storelocator/StoreLocator-2.png);
+}
+#covidt-img-2 {
+  background-image: url(../assets/images/covid19tracker/covid19tracker-2.png);
 }
 .project-img-3-4 {
   height: 80vh;
@@ -445,12 +455,16 @@ header {
 .next-project h3 {
   font-size: 36px;
   font-weight: 600;
+  color: orangered;
 }
 .next-project a {
   text-decoration: none;
   color: white;
   font-size: 48px;
-  font-weight: 300;
+  font-weight: 400;
+}
+.next-project p {
+  margin-top: -10px;
 }
 /* Contact Page */
 .contact-wrapper {
@@ -473,7 +487,16 @@ header {
   padding: 50px 0;
   color: orangered;
 }
-
+.contact-wrapper p {
+  margin: 20px;
+}
+.contact-wrapper p a {
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background-image: linear-gradient(to right, orangered, orange);
+  border-radius: 30px;
+}
 /*  About */
 .about-wrapper h1 {
   font-size: 48px;
@@ -516,6 +539,7 @@ header {
   color: white;
   font-weight: 500;
   margin: 20px 0;
+  text-align: center;
 }
 .skill h4 strong {
   color: orangered;
@@ -527,4 +551,23 @@ header {
 .work-env p {
   margin-bottom: -10px;
   color: #f0f0f0b6;
+}
+
+/* Projects Page */
+.projects-wrapper h1 {
+  font-size: 48px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.projects-wrapper h1 span {
+  color: orangered;
+}
+
+@keyframes bounce {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
 }
